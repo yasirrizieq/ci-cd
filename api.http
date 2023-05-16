@@ -1,0 +1,21 @@
+POST http://localhost:8000/register
+Content-Type: application/json
+
+{
+    "name":"sabrina",
+    "email":"sabrina@mail.com",
+    "password":"password123"
+}
+
+### 
+POST http://localhost:8000/auth/login
+Content-Type: application/json
+
+{
+    "email":"sabrina@mail.com",
+    "password":"password123"
+}
+
+###
+GET http://localhost:8000/auth/whoami
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6InNhYnJpbmEiLCJlbWFpbCI6InNhYnJpbmFAbWFpbC5jb20iLCJpYXQiOjE2ODM3Njg3NzR9.xwsd-tk_eZ1JqvzzFYG-72u0gT0917F6Ms9KBs6m144
