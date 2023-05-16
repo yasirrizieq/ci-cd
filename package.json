@@ -1,7 +1,6 @@
 {
-  "name": "monolith",
+  "name": "ci-cd",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./bin/www",
@@ -24,5 +23,18 @@
     "supertest": "^6.3.3",
     "swagger-ui-express": "^4.6.2",
     "yaml": "^2.2.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasirrizieq/ci-cd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yasirrizieq/ci-cd/issues"
+  },
+  "homepage": "https://github.com/yasirrizieq/ci-cd#readme",
+  "devDependencies": {},
+  "description": ""
 }
