@@ -2,7 +2,7 @@ name: Deploy to Railway Prod Environment
 
 on:
   push:
-    branches: [production]
+    branches: [master]
 
 jobs:
   deploy:
