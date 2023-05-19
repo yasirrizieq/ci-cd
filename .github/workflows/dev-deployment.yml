@@ -28,6 +28,8 @@ jobs:
           node-version: 18.12.0
       - name: Install packages
         run: npm install
+      - name: Install sequelize-cli
+        run: npm install sequelize-cli
       - name: Create database
         run: npx sequelize db:create
         env:
