@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 const { JWT_SECRET_KEY } = process.env;
 
 module.exports = {
-  register: async (req, res) => {
+  register: async (req, res, next) => {
     try {
       const { name, email, password } = req.body;
 
@@ -35,11 +35,11 @@ module.exports = {
         },
       });
     } catch (err) {
-      throw error;
+      next(err);
     }
   },
 
-  login: async (req, res) => {
+  login: async (req, res, next) => {
     try {
       const { email, password } = req.body;
 
@@ -76,11 +76,11 @@ module.exports = {
         },
       });
     } catch (err) {
-      throw error;
+      next(err);
     }
   },
 
-  whoami: async (req, res) => {
+  whoami: async (req, res, next) => {
     try {
       const { id, name, email } = req.user;
       return res.status(200).json({
@@ -93,7 +93,7 @@ module.exports = {
         },
       });
     } catch (err) {
-      throw error;
+      next(err);
     }
   },
 };
