@@ -1,9 +1,9 @@
 {
-  "name": "ci-cd",
+  "name": "cicd",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./bin/www",
+    "dev": "jest --detectOpenHandles",
     "test": "jest",
     "start": "node ./bin/www"
   },
