@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sentry/node": "^7.52.1",
     "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
     "debug": "^4.3.4",
@@ -36,6 +37,5 @@
     "url": "https://github.com/yasirrizieq/ci-cd/issues"
   },
   "homepage": "https://github.com/yasirrizieq/ci-cd#readme",
-  "devDependencies": {},
   "description": ""
 }
